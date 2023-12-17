@@ -46,6 +46,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -78,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:text="you can browse movies and shows by
                     genre, search for specific title, or
-                    check out our recommendation for you"
+check out our recommendation for you"
                     android:textSize="17sp"
                     android:textColor="#9f9a9a"/>
 
