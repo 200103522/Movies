@@ -1,5 +1,6 @@
 package com.example.movies
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,6 +12,12 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
+    var registerButtonBack = findViewById<Button>(R.id.registerButtonBack)
+    registerButtonBack.setOnClickListener {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
 
         val userLogin: EditText = findViewById(R.id.user_login)
         val userPass: EditText = findViewById(R.id.user_pass)
