@@ -20,13 +20,13 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Log in  "
-                android:textSize="50sp"
-                android:textColor="@color/white"
-                android:layout_marginTop="120dp"
                 android:layout_marginStart="32dp"
-                android:textStyle="bold"
-                android:textAlignment="center"/>
+                android:layout_marginTop="120dp"
+                android:text="Register  "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextText"
@@ -58,38 +58,22 @@
                 android:layout_marginEnd="31dp"
                 android:inputType="textPassword"/>
 
-            <TextView
-                android:id="@+id/textView2"
+            <EditText
+                android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Forgot Your Password?"
+                android:layout_height="50dp"
+                android:hint="Repeat Password"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:layout_marginTop="16dp"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/loginButton"
-                style="@android:style/Widget.Button"
-                android:layout_marginTop="64dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:layout_marginTop="32dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:background="@drawable/button_background"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Login" />
+                android:layout_marginEnd="31dp"
+                android:inputType="textPassword"/>
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Don't have an account"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textAlignment="center"
-                android:layout_marginTop="32dp"/>
+
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/registerButton"
