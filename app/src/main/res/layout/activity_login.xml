@@ -17,7 +17,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/main_text_login_page"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Log in  "
@@ -29,7 +29,7 @@
                 android:textAlignment="center"/>
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/login_auth"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="UserName"
@@ -44,7 +44,7 @@
                 android:inputType="text"/>
 
             <EditText
-                android:id="@+id/editTextPassword"
+                android:id="@+id/pass_auth"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Password"

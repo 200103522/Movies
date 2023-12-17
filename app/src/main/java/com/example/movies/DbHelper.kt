@@ -8,6 +8,7 @@ import androidx.core.content.contentValuesOf
 
 class DbHelper(val context: Context, val factory: SQLiteDatabase.CursorFactory?):
     SQLiteOpenHelper(context, "app", factory, 1) {
+//        register users database
     override fun onCreate(db: SQLiteDatabase?) {
         val query = "CREATE TABLE users_list(id INT PRIMARY KEY, login TEXT, pass TEXT)"
         db!!.execSQL(query)
@@ -28,7 +29,15 @@ class DbHelper(val context: Context, val factory: SQLiteDatabase.CursorFactory?)
 
         db.close()
 
+//register users database
 
+    }
+
+    fun getUser(login: String, pass: String): Boolean {
+        val db = this.readableDatabase
+
+        val  result = db.rawQuery("SELECT * FROM users_list WHERE login = '$login' AND pass = '$pass'", null)
+        return result.moveToFirst()
 
     }
 
