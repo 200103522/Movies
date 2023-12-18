@@ -8,7 +8,6 @@ import android.widget.EditText
 import android.widget.Toast
 
 class RegisterActivity : AppCompatActivity() {
-//    register users database YouTube ItProger
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
