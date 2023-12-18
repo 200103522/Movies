@@ -38,6 +38,9 @@ class LoginActivity : AppCompatActivity() {
                     userLogin.text.clear()
                     userPass.text.clear()
 
+                    val intent = Intent(this, DashboardActivity::class.java)
+                    startActivity(intent)
+
                 }else{
                     Toast.makeText(this, "user $login isn't authorized", Toast.LENGTH_LONG).show()
                 }

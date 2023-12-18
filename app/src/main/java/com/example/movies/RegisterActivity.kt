@@ -12,6 +12,7 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+// switching activity
 
     var registerButtonBack = findViewById<Button>(R.id.registerButtonBack)
     registerButtonBack.setOnClickListener {
