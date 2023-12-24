@@ -29,7 +29,7 @@ class MovieAdapter(
 
         fun bind(movie: Movie) {
             currentMovie = movie
-            // Load image using Glide or another library
+
             titleView.text = movie.title
         }
     }
